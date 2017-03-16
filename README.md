@@ -1,6 +1,6 @@
 # Dynamic MQTT-based DNS server
 
-`DNSQ` is an Elixir application that connects to an MQTT broker and responds to messages sent to `dnsq/$zone` where `$zone` is the name of a DNS "zome" (usually a domain name). The content of the message contains lines of text containing a command, followed by a space-separated list of arguments to that command which take the following form:
+`DNSQ` is an Elixir application that connects to an MQTT broker and responds to messages sent to `dnsq/$zone` where `$zone` is the name of a DNS "zone" (usually a domain name). The content of the message contains lines of text containing a command, followed by a space-separated list of arguments to that command which take the following form:
 
 ```
 add host A 0 10.1.1.1
